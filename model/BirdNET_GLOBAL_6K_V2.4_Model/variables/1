@@ -1,1 +1,3 @@
-cv
+Download Birdnet model form this link: https://zenodo.org/records/15050749/files/BirdNET_v2.4_protobuf.zip?download=1
+Find folllwing two files 'variables.data-00000-of-00001' and 'variables.index' in the folder path audio-model > variables
+And copy those in this folder.

@@ -1,0 +1,17 @@
+# Python 3.11 Environment Requirements for Modular NPZ Cache Builder
+# Note: birdnet-analyzer is NOT required. This tool uses standard audio libraries.
+
+# Deep Learning / SavedModel Embedding Extraction
+tensorflow==2.15.1
+
+# Math and Arrays
+# (numpy is strictly kept < 2.0.0 for compatibility with TensorFlow 2.15.1)
+numpy==1.25.2
+scipy==1.11.3
+
+# Audio Reading, Resampling, and Bandpass Filters
+librosa==0.11.0
+soundfile==0.13.1
+
+# Progress Bars
+tqdm==4.67.3

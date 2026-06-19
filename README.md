@@ -1,6 +1,6 @@
-=========================================================
+========================
       BirdNET Modular Cache Builder - Help Manual
-=========================================================
+========================
 
 This application is designed to efficiently extract, combine, 
 and split BirdNET feature embeddings (NPZ files) from audio 

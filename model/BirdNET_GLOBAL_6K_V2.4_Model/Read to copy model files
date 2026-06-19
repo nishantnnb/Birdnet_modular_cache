@@ -1,0 +1,3 @@
+Download Birdnet model form this link: https://zenodo.org/records/15050749/files/BirdNET_v2.4_protobuf.zip?download=1
+Find folllwing file 'saved_model.pb' in the folder 'audio-model'.
+And copy it to this folder.

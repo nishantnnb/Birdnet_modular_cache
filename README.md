@@ -26,12 +26,16 @@ However, note that, this cache data is combined for all species to be trained.
 
 3.	What is required? 
 Species wise split-up of the cache and more importantly, the provision to combine different caches is required for different use cases. 
-   Use case 1) Fragment the load of data preparation: Different team members can prepare NPZ files for different species and combine them later into one training set. This load fragmentation can save time during the training process.  
-   Use case 2) Model retraining: If only a few species need more samples or updated negatives, only those species caches need to be replaced, then all caches can be combined again. This is substantial time saving while retraining a model.
-   Use case 3) Collaboration: Species-wise cache files are easier to exchange, and collaborators can share embeddings instead of raw recordings.
-   Use case 4) Model upgrade. If a model already covers 100 species and 20 more must be added, only the new 20 species need fresh cache preparation before combining with the old set.
+
+  	Use case 1) Fragment the load of data preparation: Different team members can prepare NPZ files for different species and combine them later into one training set. This load fragmentation can save time during the training process.  
+
+  	Use case 2) Model retraining: If only a few species need more samples or updated negatives, only those species caches need to be replaced, then all caches can be combined again. This is substantial time saving while retraining a model.
+
+  	Use case 3) Collaboration: Species-wise cache files are easier to exchange, and collaborators can share embeddings instead of raw recordings.
+
+  	Use case 4) Model upgrade. If a model already covers 100 species and 20 more must be added, only the new 20 species need fresh cache preparation before combining with the old set.
  
-4.	What BirdNET Modular Cache Builder provides? 
+5.	What BirdNET Modular Cache Builder provides? 
    1)	Create separate cache files for each species.
    2)	Combine many cache files into one cache that can be used directly for training.
    3)	Split one combined cache back into separate species-wise cache files.

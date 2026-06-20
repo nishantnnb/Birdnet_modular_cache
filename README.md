@@ -1,5 +1,5 @@
 ---------------------------------------------------------
-BirdNET Modular Cache Builder - Help Manual
+BirdNET Modular Cache Builder
 ---------------------------------------------------------
 
 This application is designed to efficiently extract, combine, 

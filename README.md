@@ -14,24 +14,24 @@ Or run this command in your terminal from the Codes folder:
 py -3.11 birdnet_modular_cache.py
 
 ---------------------------------------------------------
-1.	Introduction
+1.	Introduction: 
 BirdNET-based custom training process involves preparing audio data before classifier training begins. In practice, this audio data preparation has two components: first, sound data preparation, and second, embedding extraction. 
 Large portion of time is consumed in audio data preparation stage of the training. BirdNET already provides option to save & load the training data cache. However, in different cases, it is more convenient to save the cache separately for each species. This write-up  presents BirdNET Modular Cache Builder as a tool designed around that need.
 
  
-2.	Current BirdNET Workflow
+2.	Current BirdNET Workflow: 
 BirdNET-Analyzer already supports a workflow to save & load training data cache in NPZ format. This cache is only useful when model need to be retrained with different parameters. Loading the saved cache during training saves the time for audio data preparation.
 However, note that, this cache data is combined for all species to be trained.
 
 
-3.	What is required?
+3.	What is required? 
 Species wise split-up of the cache and more importantly, the provision to combine different caches is required for different use cases. 
    Use case 1) Fragment the load of data preparation: Different team members can prepare NPZ files for different species and combine them later into one training set. This load fragmentation can save time during the training process.  
    Use case 2) Model retraining: If only a few species need more samples or updated negatives, only those species caches need to be replaced, then all caches can be combined again. This is substantial time saving while retraining a model.
    Use case 3) Collaboration: Species-wise cache files are easier to exchange, and collaborators can share embeddings instead of raw recordings.
    Use case 4) Model upgrade. If a model already covers 100 species and 20 more must be added, only the new 20 species need fresh cache preparation before combining with the old set.
  
-4.	What BirdNET Modular Cache Builder provides?
+4.	What BirdNET Modular Cache Builder provides? 
 1)	Create separate cache files for each species.
 2)	Combine many cache files into one cache that can be used directly for training.
 3)	Split one combined cache back into separate species-wise cache files.

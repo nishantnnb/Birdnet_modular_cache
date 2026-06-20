@@ -36,9 +36,9 @@ Species wise split-up of the cache and more importantly, the provision to combin
   	Use case 4) Model upgrade. If a model already covers 100 species and 20 more must be added, only the new 20 species need fresh cache preparation before combining with the old set.
  
 4.	What BirdNET Modular Cache Builder provides? 
-   1)	Create separate cache files for each species.
-   2)	Combine many cache files into one cache that can be used directly for training.
-   3)	Split one combined cache back into separate species-wise cache files.
+  * Create separate cache files for each species.
+  * Combine many cache files into one cache that can be used directly for training.
+  * Split one combined cache back into separate species-wise cache files.
 
 ---------------------------------------------------------
 The interface is divided into three separate tabs depending 

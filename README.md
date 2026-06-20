@@ -13,6 +13,8 @@ Either double click birdnet_modular_cache.py
 Or run this command in your terminal from the Codes folder:
 py -3.11 birdnet_modular_cache.py
 
+
+---------------------------------------------------------
 The interface is divided into three separate tabs depending 
 on the stage of your workflow.
 

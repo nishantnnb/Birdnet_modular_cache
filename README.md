@@ -33,7 +33,7 @@ Species wise split-up of the cache and more importantly, the provision to combin
 
   	Use case 3) Collaboration: Species-wise cache files are easier to exchange, and collaborators can share embeddings instead of raw recordings.
 
-  	Use case 4) Model upgrade. If a model already covers 100 species and 20 more must be added, only the new 20 species need fresh cache preparation before combining with the old set.
+  	Use case 4) Model upgrade: If a model already covers 100 species and 20 more must be added, only the new 20 species need fresh cache preparation before combining with the old set.
  
 4.	What BirdNET Modular Cache Builder provides?
    * Create separate cache files for each species.

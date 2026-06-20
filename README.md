@@ -2,16 +2,16 @@
 BirdNET Modular Cache Builder
 ---------------------------------------------------------
 
-This application is designed to efficiently extract, combine, 
+This application is designed to combine, 
 and split BirdNET feature embeddings (NPZ files) from audio 
-recordings without relying on the full BirdNET library.
+recordings.
 
 Plese read install.md for setup & installation related information.
 
 Run the application by launchng the graphical interface:
-Either double click birdnet_modular_cache.py
-Or run this command in your terminal from the Codes folder:
-py -3.11 birdnet_modular_cache.py
+ Either double click birdnet_modular_cache.py
+ Or run this command in your terminal from the Codes folder:
+ py -3.11 birdnet_modular_cache.py
 
 ---------------------------------------------------------
 1.	Introduction: 

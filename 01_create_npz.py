@@ -17,7 +17,8 @@ import tqdm
 import tensorflow as tf
 
 # ── SavedModel path (pip-installed, contains "embeddings" signature) ──────────
-PB_MODEL_PATH = r"D:\BirdNET-Analyzer\_internal\NB_NPZ\model\BirdNET_GLOBAL_6K_V2.4_Model"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PB_MODEL_PATH = os.path.join(SCRIPT_DIR, "model", "BirdNET_GLOBAL_6K_V2.4_Model")
 
 # ── Audio constants matching BirdNET V2.4 ─────────────────────────────────────
 SAMPLE_RATE   = 48000   # Hz

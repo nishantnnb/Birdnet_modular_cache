@@ -14,6 +14,13 @@ import os
 import sys
 import threading
 import subprocess
+import os
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PARENT_DIR = os.path.dirname(SCRIPT_DIR)
+DEFAULT_MODEL_DIR = os.path.join(SCRIPT_DIR, 'model')
+DEFAULT_NPZ_DIR = os.path.join(PARENT_DIR, 'npzs')
+
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox, scrolledtext
 import datetime
@@ -373,7 +380,7 @@ def main():
     def browse_model():
         d = filedialog.askdirectory(
             title="Select BirdNET Model Directory",
-            initialdir=r"D:\BirdNET-Analyzer\_internal\NB_NPZ\model")
+            initialdir=DEFAULT_MODEL_DIR)
         if d:
             t1_model_var.set(d.replace("/", "\\"))
     ttk.Button(card_paths, text="Browse...", command=browse_model).grid(
@@ -387,7 +394,7 @@ def main():
 
     def browse_audio():
         d = filedialog.askdirectory(
-            title="Select Input Audio Directory", initialdir=r"D:\ebird")
+            title="Select Input Audio Directory", initialdir=PARENT_DIR)
         if d:
             t1_audio_var.set(d.replace("/", "\\"))
     ttk.Button(card_paths, text="Browse...", command=browse_audio).grid(
@@ -405,13 +412,13 @@ def main():
         if mode == "separate":
             d = filedialog.askdirectory(
                 title="Select Parent Output Folder",
-                initialdir=r"D:\BirdNET-Analyzer\_internal\NB_NPZ\npzs")
+                initialdir=DEFAULT_NPZ_DIR)
             if d:
                 t1_out_var.set(d.replace("/", "\\"))
         else:
             f = filedialog.asksaveasfilename(
                 title="Select Output .npz File Path",
-                initialdir=r"D:\BirdNET-Analyzer\_internal\NB_NPZ\npzs",
+                initialdir=DEFAULT_NPZ_DIR,
                 filetypes=[("NPZ Files", "*.npz"), ("All Files", "*.*")],
                 defaultextension=".npz")
             if f:
@@ -557,7 +564,7 @@ def main():
     def browse_t2_dir():
         d = filedialog.askdirectory(
             title="Select Folder containing NPZs",
-            initialdir=r"D:\BirdNET-Analyzer\_internal\NB_NPZ\npzs")
+            initialdir=DEFAULT_NPZ_DIR)
         if d:
             t2_dir_var.set(d.replace("/", "\\"))
     ttk.Button(card_t2, text="Browse...", command=browse_t2_dir).grid(
@@ -572,7 +579,7 @@ def main():
     def browse_t2_out():
         f = filedialog.asksaveasfilename(
             title="Choose Location for Master NPZ",
-            initialdir=r"D:\BirdNET-Analyzer\_internal\NB_NPZ\npzs",
+            initialdir=DEFAULT_NPZ_DIR,
             filetypes=[("NPZ Files", "*.npz"), ("All Files", "*.*")],
             defaultextension=".npz")
         if f:
@@ -623,7 +630,7 @@ def main():
     def browse_t3_file():
         f = filedialog.askopenfilename(
             title="Select Combined Master NPZ",
-            initialdir=r"D:\BirdNET-Analyzer\_internal\NB_NPZ\npzs",
+            initialdir=DEFAULT_NPZ_DIR,
             filetypes=[("NPZ Files", "*.npz"), ("All Files", "*.*")])
         if f:
             t3_file_var.set(f.replace("/", "\\"))
@@ -639,7 +646,7 @@ def main():
     def browse_t3_dir():
         d = filedialog.askdirectory(
             title="Select Folder to Save Split NPZs",
-            initialdir=r"D:\BirdNET-Analyzer\_internal\NB_NPZ\npzs")
+            initialdir=DEFAULT_NPZ_DIR)
         if d:
             t3_dir_var.set(d.replace("/", "\\"))
     ttk.Button(card_t3, text="Browse...", command=browse_t3_dir).grid(

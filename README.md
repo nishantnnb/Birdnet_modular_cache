@@ -8,6 +8,11 @@ recordings without relying on the full BirdNET library.
 
 Plese read install.md for setup & installation related information.
 
+Run the application by launchng the graphical interface:
+Either double click birdnet_modular_cache.py
+Or run this command in your terminal from the Codes folder:
+py -3.11 birdnet_modular_cache.py
+
 The interface is divided into three separate tabs depending 
 on the stage of your workflow.
 

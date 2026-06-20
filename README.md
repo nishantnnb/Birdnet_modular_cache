@@ -6,6 +6,8 @@ This application is designed to efficiently extract, combine,
 and split BirdNET feature embeddings (NPZ files) from audio 
 recordings without relying on the full BirdNET library.
 
+Plese read install.md for setup & installation related information.
+
 The interface is divided into three separate tabs depending 
 on the stage of your workflow.
 

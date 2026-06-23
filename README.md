@@ -104,6 +104,9 @@ General Information
 • Background Processing: Pressing "Start" on any tab runs the heavy processing in the background. Your interface will remain responsive, and live progress will stream directly into the black console window at the bottom of the app.
 • Stopping: Pressing the red "Stop" button will cleanly terminate the background process. Any files currently being written may be incomplete and should be deleted.
 
+---------------------------------------------------------
+Citation
+---------------------------------------------------------
 BirdNET AI model by the K. Lisa Yang Center for Conservation Bioacoustics at the Cornell Lab of Ornithology in collaboration with Chemnitz University of Technology.  <a href="https://github.com/birdnet-team/BirdNET-Analyzer" target="_blank">Birdnet analyzer</a>, <a href="https://zenodo.org/records/15050749" target="_blank">Birdnet models</a> </p>
 @article{kahl2021birdnet,
   title={BirdNET: A deep learning solution for avian diversity monitoring},
